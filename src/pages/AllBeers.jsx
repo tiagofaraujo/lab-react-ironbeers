@@ -23,15 +23,19 @@ function AllBeers () {
   return (
     <div>
     <input type="text" value={userInput} onChange={(e)=>setUserInput(e.target.value)}></input>
+      <p>Search</p>
+      <br/>
+      <br/>
       {data.map((beer) => (
         <div>
-          <Link to={`/beers/${beer._id}`}>
+          <Link className="home-link" to={`/beers/${beer._id}`}>
             <img className="beers-image" src={beer.image_url} alt="beerImage" />
             <div>
               <h5>{beer.name}</h5>
               <h5>{beer.tagline}</h5>
               <p>Created By: {beer.contributed_by}</p>
             </div>
+            <hr/>
           </Link>
         </div>
       ))}

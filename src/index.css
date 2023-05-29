@@ -15,8 +15,137 @@ code {
 
 .home-link {
 text-decoration: none;
+color: #333;
 }
 .beers-image{
-  width: 200px;
-  height: 200px;
+  width: 5%;
+  height: 5%;
 }
+
+.list {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* // move the form to the left */
+  display: flex;
+  flex-direction: column;
+}
+
+.list h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.list form {
+  display: flex;
+  flex-direction: column;
+}
+
+.list label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.list input {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.list p {
+  color: red;
+  margin-top: 10px;
+}
+
+.list button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.list button[type="submit"]:hover {
+  background-color: #1a73e8;
+}
+
+.Nav {
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.Nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Nav ul li {
+  margin-right: 10px;
+}
+
+.Nav ul li:last-child {
+  margin-right: 0;
+}
+
+.Nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.Nav ul li a.selected {
+  color: #4285f4;
+}
+
+.AllBeers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.beer-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.beer-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.beer-card h5 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.beer-card h5,
+.beer-card p {
+  margin-bottom: 5px;
+}
+
+.beer-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+
+

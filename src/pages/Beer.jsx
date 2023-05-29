@@ -23,7 +23,7 @@ console.log(beerId)
       
     return (
                    <div>
-            <img alt="beerDetails" src={foundBeer.image_url}></img>
+            <img className='beers-image' alt="beerDetails" src={foundBeer.image_url}></img>
             <h1>{foundBeer.name}</h1>
             <p>{foundBeer.tagline}</p>
             <p>{foundBeer.first_brewed}</p>
